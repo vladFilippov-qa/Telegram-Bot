@@ -41,7 +41,7 @@ def start_command_handler(message: types.Message):
 @bot.message_handler()
 def message_handler(message: types.Message):
     # проверяем текст сообщения на совпадение с текстом какой либо из кнопок
-    # в зависимости от типа карты присваем занчение переменной 'card_type'
+    # в зависимости от типа карты присваем значение переменной 'card_type'
     if message.text == 'VISA':
         card_type = 'visa'
     elif message.text == 'Mastercard':
